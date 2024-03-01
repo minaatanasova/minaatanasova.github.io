@@ -28,7 +28,7 @@ header {
 }
 
 main h1 {
-  font-size: 8em; /* Significantly increased size for Hubri text */
+  font-size: 7em; /* Significantly increased size for Hubri text */
   margin: 0; /* Adjusted margin for centering */
   color: white; /* Ensures text is white */
 }
