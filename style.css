@@ -11,6 +11,14 @@ body {
   min-height: 100vh;
 }
 
+header h1 {
+  font-size: 4em; /* Makes the text larger */
+  color: white; /* Ensures text is white */
+  text-align: center; /* Centers the text */
+  margin: 0 auto; /* Additional centering for the element */
+  padding: 0.5em; /* Adds some padding around the text */
+}
+
 header {
   flex-grow: 1;
   display: flex;
