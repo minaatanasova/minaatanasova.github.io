@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-  font-size: 50em; /* Significantly increased size for Hubri text */
+  font-size: 100em; /* Significantly increased size for Hubri text */
   margin: 0; /* Adjusted margin for centering */
   color: white; /* Ensures text is white */
 }
@@ -60,16 +60,20 @@ main {
   padding-top: 2rem; /* Added space from the top for privacy content */
 }
 
-.about-content,
-.privacy-content {
-  max-width: 75%; /* Adjusted content width for readability */
+.about-content {
+  max-width: 25%; /* Adjusted content width for readability */
   margin: auto;
   text-align: center;
 }
 
+.privacy-content {
+  min-width: 75%; /* Adjusted content width for readability */
+  text-align: center;
+  margin: 2rem;
+}
+
 .contact-body a {
   color: white;
-  text-decoration: underline;
 }
 
 footer {
