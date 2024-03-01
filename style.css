@@ -57,7 +57,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2rem; /* Added space from the top for privacy content */
+  padding-top: 3rem; /* Added space from the top for privacy content */
 }
 
 .about-content {
@@ -114,7 +114,7 @@ footer {
 }
 
 .app-screenshots img {
-  max-width: 18%; /* Adjusts image size to fit 5 across on larger screens */
+  max-width: 15%; /* Adjusts image size to fit 5 across on larger screens */
   margin: 10px; /* Adds space between images */
   border-radius: 10px; /* Rounds the corners of the images */
 }
