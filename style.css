@@ -1,47 +1,39 @@
-body {
-  background-color: #00aeba;
-  font-family: "Alata", sans-serif;
-  line-height: 1.6;
+body,
+html {
+  height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+body {
+  background-color: #00aeba; /* Default background color */
+  font-family: "Alata", sans-serif;
   color: white;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+}
+
+header,
+footer,
+nav,
+main {
+  padding: 1rem;
 }
 
 header h1 {
-  font-size: 4em; /* Makes the text larger */
-  color: white; /* Ensures text is white */
-  text-align: center; /* Centers the text */
-  margin: 0 auto; /* Additional centering for the element */
-  padding: 0.5em; /* Adds some padding around the text */
-}
-
-header {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-header img {
-  width: 400px; /* Adjust size as needed */
-  height: auto;
+  font-size: 8em; /* Adjusted size */
+  margin: auto; /* Centering */
 }
 
 nav {
-  background: #00aeba;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
 }
 
 nav a {
   color: white;
-  padding: 0 1rem;
+  padding: 0.5rem;
   text-decoration: none;
 }
 
@@ -51,21 +43,33 @@ nav a.active {
 }
 
 main {
-  flex-grow: 2;
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 footer {
-  background: #00aeba;
-  color: white;
   text-align: center;
-  padding: 1rem;
   margin-top: auto;
+  font-size: 0.4em; /* Adjusted size */
 }
 
-footer p {
-  margin: 0;
+/* Specific Page Backgrounds */
+.about-body {
+  background-color: #473bf0;
+}
+.contact-body {
+  background-color: #ea003e;
+}
+.privacy-body {
+  background-color: white;
+  color: black;
+}
+
+/* Content width for About page */
+.about-content {
+  max-width: 25%;
+  margin: auto;
 }
