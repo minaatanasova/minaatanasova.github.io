@@ -94,7 +94,8 @@ footer {
 .privacy-body {
   background-color: white;
   color: black;
-  padding-top: 2rem; /* Additional padding for content spacing */
+  padding-top: 2rem;
+  display: block; /* Additional padding for content spacing */
 }
 
 /* Responsive adjustments */
@@ -103,8 +104,7 @@ footer {
     font-size: 8em; /* Smaller font size for mobile */
   }
 
-  .about-content,
-  .privacy-content {
+  .about-content {
     max-width: 90%; /* Wider content area for mobile */
   }
 }
