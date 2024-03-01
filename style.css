@@ -98,6 +98,14 @@ footer {
   display: block; /* Additional padding for content spacing */
 }
 
+/* Override for privacy page main element */
+.privacy-body main {
+  display: block; /* Disables flexbox for main element */
+  width: auto; /* Ensures it takes the full available width */
+  max-width: none; /* Removes any max-width restriction */
+  padding: 1rem; /* Consistent padding */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header h1 {
