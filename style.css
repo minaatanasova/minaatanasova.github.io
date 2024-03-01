@@ -106,10 +106,27 @@ footer {
   padding: 1rem; /* Consistent padding */
 }
 
+.app-screenshots {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between images */
+  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+  margin-top: 2rem; /* Adds some space above the image gallery */
+}
+
+.app-screenshots img {
+  max-width: 18%; /* Adjusts image size to fit 5 across on larger screens */
+  margin: 10px; /* Adds space between images */
+  border-radius: 10px; /* Rounds the corners of the images */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header h1 {
     font-size: 8em; /* Smaller font size for mobile */
+  }
+
+  .app-screenshots img {
+    max-width: 45%; /* Allows for 2 images per row on smaller screens */
   }
 
   .about-content {
