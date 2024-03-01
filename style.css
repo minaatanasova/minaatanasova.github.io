@@ -27,8 +27,8 @@ header {
   flex-grow: 1;
 }
 
-header h1 {
-  font-size: 100em; /* Significantly increased size for Hubri text */
+main h1 {
+  font-size: 50em; /* Significantly increased size for Hubri text */
   margin: 0; /* Adjusted margin for centering */
   color: white; /* Ensures text is white */
 }
