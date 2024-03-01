@@ -61,7 +61,7 @@ main {
 }
 
 .about-content {
-  max-width: 25%; /* Adjusted content width for readability */
+  max-width: 20%; /* Adjusted content width for readability */
   margin: auto;
   text-align: center;
 }
