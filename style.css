@@ -28,7 +28,7 @@ header {
 }
 
 main h1 {
-  font-size: 20em; /* Significantly increased size for Hubri text */
+  font-size: 12em; /* Significantly increased size for Hubri text */
   margin: 0; /* Adjusted margin for centering */
   color: white; /* Ensures text is white */
 }
@@ -104,7 +104,6 @@ footer {
 }
 
 .privacy-content {
-  width: auto; /* Allows content to naturally occupy needed width */
   min-width: 75%; /* Adjusted for better readability */
   margin: 2rem;
 }
