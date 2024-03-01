@@ -5,32 +5,10 @@ html {
 }
 
 body {
-  background-color: #00aeba; /* Default background color */
   font-family: "Alata", sans-serif;
-  color: white;
   display: flex;
   flex-direction: column;
-}
-
-header,
-footer,
-nav,
-main {
-  padding: 1rem;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-header h1 {
-  font-size: 32em; /* Significantly increased size for Hubri text */
-  margin: 0; /* Adjusted margin for centering */
-  color: white; /* Ensures text is white */
+  text-align: center;
 }
 
 nav {
@@ -41,7 +19,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: inherit; /* Use the page-specific text color */
   padding: 0.5rem;
   text-decoration: none;
 }
@@ -52,56 +30,76 @@ nav a.active {
 }
 
 main {
-  flex-grow: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding-top: 2rem; /* Added space from the top for privacy content */
+  padding: 4rem 1rem 1rem; /* Increased top padding for privacy content */
+  flex-grow: 1;
 }
 
-.about-content,
-.privacy-content {
-  max-width: 75%; /* Adjusted content width for readability */
-  margin: auto;
-  text-align: center;
+header h1 {
+  font-size: 10em; /* Corrected size for "Hubri" text */
+  margin: 0;
+  padding: 0;
 }
 
-.contact-body a {
-  color: white;
-  text-decoration: underline;
+p {
+  font-size: 2em; /* Ensures noticeable size */
+  margin-top: 2rem; /* Space between "Hubri" and "Coming Spring 2024" */
 }
 
 footer {
-  text-align: center;
+  font-size: 0.4em;
   margin-top: auto;
-  font-size: 0.4em; /* Adjusted font size */
-  color: black; /* For visibility against the white background on the Privacy page */
+  padding: 1rem;
 }
 
-/* Specific Page Backgrounds */
+/* Page-specific styles */
+.about-body,
+.contact-body,
+.privacy-body {
+  padding: 1rem;
+}
+
 .about-body {
   background-color: #473bf0;
+  color: white;
 }
 
 .contact-body {
   background-color: #ea003e;
+  color: white;
+}
+
+.contact-body a {
+  text-decoration: underline;
 }
 
 .privacy-body {
   background-color: white;
   color: black;
-  padding-top: 2rem; /* Additional padding for content spacing */
+}
+
+.about-content,
+.privacy-content {
+  width: auto; /* Allows content to naturally occupy needed width */
+  max-width: 75%; /* Adjusted for better readability */
+  margin: 2rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 8em; /* Smaller font size for mobile */
+    font-size: 4em; /* Adjusted for smaller screens */
   }
 
   .about-content,
   .privacy-content {
-    max-width: 90%; /* Wider content area for mobile */
+    max-width: 90%; /* Allows more content width on smaller screens */
+  }
+
+  p {
+    font-size: 1.5em; /* Smaller text size on mobile */
   }
 }
