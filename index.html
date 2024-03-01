@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hubri - Push Your Limits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="margin:0;">Hubri</h1>
+    </header>
+    <nav>
+        <a href="#" id="homeLink">Home</a>
+        <a href="#about" id="aboutLink">About</a>
+        <a href="#contact" id="contactLink">Contact</a>
+    </nav>
+    <main>
+        <div id="home">
+            <h2>Designed to build confidence by pushing you out of your comfort zone. Coming Spring 2024</h2>
+        </div>
+        <section id="about">
+            <h2>About Hubri</h2>
+            <p>Your mission statement here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact us at contact@hubri.com</p>
+        </section>
+    </main>
+    <footer>
+        <div name="termly-embed" data-id="0ff503c6-cba5-4a60-859f-91dde4b09b2b"></div>
+        <script type="text/javascript">(function(d, s, id) {
+            var js, tjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://app.termly.io/embed-policy.min.js";
+            tjs.parentNode.insertBefore(js, tjs);
+        }(document, 'script', 'termly-jssdk'));</script>
+        <p>© 2024 Hubri</p>
+    </footer>
+    <script>
+        // Script to handle the navigation active state
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelectorAll('nav a').forEach(node => node.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
